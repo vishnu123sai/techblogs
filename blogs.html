@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - Vishnuvardhan Nayakam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="blogs-styles.css" rel="stylesheet">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Vishnuvardhan Nayakam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://vishnuvardhannayakam.co.in" target="_blank" rel="noopener noreferrer" onclick="window.open('https://vishnuvardhannayakam.co.in', '_blank'); return false;">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://vishnuvardhannayakam.co.in#contact" target="_blank" rel="noopener noreferrer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold text-white mb-4">My Technical Blog</h1>
+                    <h2 class="h3 text-light mb-4">DevOps, Cloud, Kubernetes, and Technology Insights</h2>
+                    <p class="lead text-light mb-4">
+                        Sharing knowledge and experiences from my journey in DevOps, cloud infrastructure, and automation.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center">
+                        <a href="https://medium.com/@vishnu123sai" class="btn btn-primary btn-lg" target="_blank">
+                            <i class="fab fa-medium me-2"></i>Follow on Medium
+                        </a>
+                        <a href="https://vishnuvardhannayakam.co.in" class="btn btn-outline-light btn-lg" target="_blank">Back to Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Posts -->
+    <section id="blogs" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Latest Blog Posts</h2>
+                    <div class="divider mx-auto"></div>
+                    <p class="lead">Insights and tutorials from my technical journey</p>
+                </div>
+            </div>
+            
+            <!-- Blog Categories -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap gap-2 justify-content-center">
+                        <button class="btn btn-outline-primary active" data-category="all">All</button>
+                        <button class="btn btn-outline-primary" data-category="devops">DevOps</button>
+                        <button class="btn btn-outline-primary" data-category="kubernetes">Kubernetes</button>
+                        <button class="btn btn-outline-primary" data-category="cloud">Cloud</button>
+                        <button class="btn btn-outline-primary" data-category="automation">Automation</button>
+                        <button class="btn btn-outline-primary" data-category="python">Python</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Posts Grid -->
+            <div class="row" id="blogPosts">
+                <!-- DevOps Blog -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="devops kubernetes">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=400&h=250&fit=crop" alt="Kubernetes Cluster" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="badge bg-primary">DevOps</span>
+                                <span class="badge bg-info">Kubernetes</span>
+                                <small class="text-muted">Dec 15, 2024</small>
+                            </div>
+                            <h5 class="blog-title">Managing Production Kubernetes Clusters at Scale</h5>
+                            <p class="blog-excerpt">
+                                Learn the best practices for managing production Kubernetes clusters, including monitoring, scaling, and troubleshooting strategies.
+                            </p>
+                            <a href="https://medium.com/@vishnu123sai/managing-production-kubernetes-clusters-at-scale" class="btn btn-outline-primary btn-sm" target="_blank">
+                                Read on Medium <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud Blog -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="cloud automation">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop" alt="Cloud Infrastructure" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="badge bg-success">Cloud</span>
+                                <span class="badge bg-warning">Automation</span>
+                                <small class="text-muted">Dec 10, 2024</small>
+                            </div>
+                            <h5 class="blog-title">Infrastructure as Code with Terraform and AWS CDK</h5>
+                            <p class="blog-excerpt">
+                                A comprehensive guide to implementing Infrastructure as Code using Terraform and AWS CDK for scalable cloud deployments.
+                            </p>
+                            <a href="https://medium.com/@vishnu123sai/infrastructure-as-code-with-terraform-and-aws-cdk" class="btn btn-outline-primary btn-sm" target="_blank">
+                                Read on Medium <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python Blog -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="python automation">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=250&fit=crop" alt="Python Code" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="badge bg-info">Python</span>
+                                <span class="badge bg-warning">Automation</span>
+                                <small class="text-muted">Dec 5, 2024</small>
+                            </div>
+                            <h5 class="blog-title">Building Intelligent Slack Bots with Python and LLMs</h5>
+                            <p class="blog-excerpt">
+                                How to create intelligent Slack bots using Python, integrating with Large Language Models for enhanced automation and assistance.
+                            </p>
+                            <a href="https://medium.com/@vishnu123sai/building-intelligent-slack-bots-with-python-and-llms" class="btn btn-outline-primary btn-sm" target="_blank">
+                                Read on Medium <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monitoring Blog -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="devops monitoring">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Monitoring Dashboard" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="badge bg-primary">DevOps</span>
+                                <span class="badge bg-danger">Monitoring</span>
+                                <small class="text-muted">Nov 28, 2024</small>
+                            </div>
+                            <h5 class="blog-title">Building Effective Monitoring and Alerting Systems</h5>
+                            <p class="blog-excerpt">
+                                Essential strategies for building robust monitoring and alerting systems that help maintain high availability and performance.
+                            </p>
+                            <a href="https://medium.com/@vishnu123sai/building-effective-monitoring-and-alerting-systems" class="btn btn-outline-primary btn-sm" target="_blank">
+                                Read on Medium <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CI/CD Blog -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="devops automation">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=400&h=250&fit=crop" alt="CI/CD Pipeline" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="badge bg-primary">DevOps</span>
+                                <span class="badge bg-warning">CI/CD</span>
+                                <small class="text-muted">Nov 20, 2024</small>
+                            </div>
+                            <h5 class="blog-title">Optimizing CI/CD Pipelines for Faster Deployments</h5>
+                            <p class="blog-excerpt">
+                                Techniques and best practices for optimizing your CI/CD pipelines to achieve faster, more reliable deployments.
+                            </p>
+                            <a href="https://medium.com/@vishnu123sai/optimizing-ci-cd-pipelines-for-faster-deployments" class="btn btn-outline-primary btn-sm" target="_blank">
+                                Read on Medium <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Blog -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="cloud security">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop" alt="Security" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="badge bg-success">Cloud</span>
+                                <span class="badge bg-danger">Security</span>
+                                <small class="text-muted">Nov 15, 2024</small>
+                            </div>
+                            <h5 class="blog-title">Cloud Security Best Practices for DevOps Teams</h5>
+                            <p class="blog-excerpt">
+                                Essential security practices that every DevOps team should implement when working with cloud infrastructure.
+                            </p>
+                            <a href="https://medium.com/@vishnu123sai/cloud-security-best-practices-for-devops-teams" class="btn btn-outline-primary btn-sm" target="_blank">
+                                Read on Medium <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-4">
+                <button class="btn btn-primary btn-lg" id="loadMoreBtn">
+                    <i class="fas fa-plus me-2"></i>Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h3 class="mb-4">Stay Updated with My Latest Articles</h3>
+                    <p class="lead mb-4">Get notified when I publish new technical content about DevOps, cloud, and automation.</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Enter your email address" id="newsletterEmail">
+                                <button class="btn btn-primary" type="button" id="subscribeBtn">
+                                    <i class="fas fa-paper-plane me-2"></i>Subscribe
+                                </button>
+                            </div>
+                            <small class="text-muted">I'll send you updates about new blog posts and technical insights.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Vishnuvardhan Nayakam</h5>
+                    <p>DevOps Engineer | Technical Blogger | Cloud Infrastructure Expert</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/nayakamvishnuvardhan" class="text-white me-3" target="_blank">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://medium.com/@vishnu123sai" class="text-white me-3" target="_blank">
+                            <i class="fab fa-medium fa-lg"></i>
+                        </a>
+                        <a href="mailto:vishnu123sai@gmail.com" class="text-white me-3">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 Vishnuvardhan Nayakam. All rights reserved.</p>
+                <p><small>Technical blog covering DevOps, Cloud, Kubernetes, and Automation</small></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="blogs.js"></script>
+</body>
+</html>
